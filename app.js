@@ -17,7 +17,7 @@ const regexAtLeast = /[0,9]{5,}/g;
 // # Metacharacter
 
 // \d match any digit character or number
-// \w (a-z, A-Z, 0-9) and \_
+// \w (a-z, A-Z, 0-9) and _
 // \s match whitespace character(spaces, tabs ets)
 // \t match tab character only
 
@@ -35,12 +35,10 @@ const regexQuestionCharacter = /a[a-z]?/g;
 const regexDot = /car./g;
 console.log(regexDot.test("cars")); //match
 
-// - "_", match as much as it can, its
-// Eg. /a[a-z]_/g, will match adsfsdfdsfdsfdsfdsfds12321, not match until number
+// - "*", match as much as it can, its
+// Eg. /a[a-z]*/g, will match adsfsdfdsfdsfdsfdsfds12321, not match until number
 
 // Escape special character
-// Using \ , eg. /abc\*/, will match abc\*
+// Using \ , eg. /abc\*/, will match abc*
 
 // #Start and Ending pattern
-// using (carrot) ^ , using $ to detect the end of character
-// Eg. ^[a-z]{5}$
