@@ -1,3 +1,4 @@
+```js
 // Character Set []
 const regex1 = /ninja/g;
 
@@ -44,3 +45,4 @@ console.log(regexDot.test("cars")); //match
 // #Start and Ending pattern
 // using (carrot) ^ , using $ to detect the end of character
 // Eg. ^[a-z]{5}$
+```
