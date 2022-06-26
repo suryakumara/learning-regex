@@ -42,3 +42,5 @@ console.log(regexDot.test("cars")); //match
 // Using \ , eg. /abc\*/, will match abc*
 
 // #Start and Ending pattern
+// using (carrot) ^ , using $ to detect the end of character
+// Eg. ^[a-z]{5}$
